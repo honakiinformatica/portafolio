@@ -1,0 +1,674 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #393d42;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .margen-interno {
+        padding: 0 50px;
+    }
+    
+    .padre {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    header {
+        background-image: url(../img/teclado1.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .menu {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-wrap: wrap;
+        height: 70px;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .logo {
+        flex: 1 1 auto;
+        font-size: 30px;
+    }
+    
+    .logo a {
+        color: white;
+    }
+    
+    .logo a:hover {
+        color: #0a0a0a;
+    }
+    
+    .nav {
+        flex: 5 1 auto;
+        display: flex;
+    }
+    
+    .nav a {
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0 5px;
+        letter-spacing: 1px;
+        margin-left: 60px;
+    }
+    
+    .nav a:hover {
+        color: #0a0a0a;
+    }
+    
+    .texto-principal {
+        /*background: rgba(0,0,0,0.3);*/
+        height: 580px;
+        display: flex;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 23px;
+        color: white;
+        text-align: center;
+        font-weight: 300px;
+        line-height: 1.6;
+        margin-left: 20px;
+    }
+    
+    .cv {
+        font-size: 18px;
+        color: white;
+        margin-left: 320px;
+        margin-right: 50px;
+        border: 2px solid red;
+        border-radius: 10px;
+        padding: 20px 30px;
+    }
+    
+    h2 {
+        font-size: 26px;
+        color: white;
+        text-align: center;
+        margin-top: 35px;
+    }
+    
+    .parrafo {
+        font-size: 21px;
+        color: white;
+        margin-top: 20px;
+        text-align: justify;
+    }
+    
+    .diseno {
+        border: 1px solid #595d63;
+        background: #595d63;
+        width: 400px;
+        height: 200px;
+        margin-left: 180px;
+    }
+    
+    .diseno h3 {
+        font-size: 20px;
+        color: white;
+        text-align: center
+    }
+    
+    .diseno p {
+        font-size: 18px;
+        color: white;
+        text-align: justify;
+        margin: 20px;
+    }
+    
+    .diseno:hover {
+        background: #d92809;
+    }
+    
+    #github {
+        height: 40px;
+        margin: 10px;
+    }
+    
+    .reparacion {
+        border: 1px solid #595d63;
+        background: #595d63;
+        width: 400px;
+        height: 200px;
+        margin-left: 740px;
+        margin-top: -197px;
+    }
+    
+    .reparacion:hover {
+        background: #d92809;
+    }
+    
+    #repar {
+        height: 40px;
+        margin: 10px;
+    }
+    
+    .reparacion h3 {
+        font-size: 20px;
+        color: white;
+        text-align: center
+    }
+    
+    .reparacion p {
+        font-size: 18px;
+        color: white;
+        text-align: justify;
+        margin: 20px;
+    }
+    
+    .presentacion {
+        font-size: 24px;
+        color: white;
+        width: 600px;
+        height: 200px;
+        text-align: justify;
+        margin-left: 130px;
+    }
+    
+    #foto {
+        float: right;
+        height: 300px;
+        margin-right: 200px;
+        margin-top: -130px;
+    }
+    
+    .presentacion p {
+        margin-top: 20px;
+    }
+    
+    #robot {
+        height: 340px;
+        margin-top: 440px;
+        margin-left: 40px;
+    }
+    
+    .info1 {
+        float: right;
+        margin-top: -360px;
+        margin-right: 100px;
+    }
+    
+    #info {
+        color: white;
+        font-size: 26px;
+    }
+    
+    .info1 p {
+        color: white;
+        font-size: 18px;
+        padding: 6px;
+    }
+    
+    .info1 ul {
+        margin-top: 10px;
+        color: white;
+    }
+    
+    .info1 ul li {
+        list-style: none;
+        padding: 10px;
+    }
+    
+    .info1 img {
+        height: 60px;
+    }
+    
+    .info1 img:hover {
+        transform: scale(1.4);
+    }
+    
+    #habilidades h2 {
+        margin-top: 270px;
+    }
+    
+    .algo {
+        font-size: 20px;
+        color: white;
+        text-align: justify;
+        width: 690px;
+        margin-top: -160px;
+    }
+    
+    .imagenes {
+        margin-left: 320px;
+        margin-top: 300px;
+    }
+    
+    .imagenes img {
+        height: 120px;
+        margin-top: -110px;
+        padding: 5px;
+    }
+    
+    .imagenes img:hover {
+        transform: scale(1.4);
+    }
+    
+    .imagenes-galeria {
+        width: 100%;
+        display: inline-block;
+        height: 700px;
+    }
+    
+    .imagenes-galeria h3 {
+        font-size: 26px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 50px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    
+    #opiniones {
+        width: 730px;
+        height: 380px;
+        border: 5px solid black;
+        margin-left: 300px;
+        margin-top: 40px;
+    }
+    
+    #Ana {
+        width: 300px;
+        height: 150px;
+        border: 3px solid black;
+        margin: 20px;
+        padding: 10px;
+        color: white;
+        font-size: 17px;
+    }
+    
+    #Tirando {
+        width: 300px;
+        height: 150px;
+        border: 3px solid black;
+        margin: 20px;
+        padding: 10px;
+        color: white;
+        font-size: 17px;
+    }
+    
+    #cabana {
+        width: 300px;
+        height: 150px;
+        border: 3px solid black;
+        margin: 20px;
+        margin-left: 400px;
+        margin-top: -339px;
+        padding: 10px;
+        color: white;
+        font-size: 17px;
+    }
+    
+    #honaki {
+        width: 300px;
+        height: 150px;
+        border: 3px solid black;
+        margin: 20px;
+        padding: 10px;
+        color: white;
+        font-size: 17px;
+        margin-left: 400px;
+    }
+    
+    #icono {
+        height: 60px;
+    }
+    
+    #boton {
+        text-align: center;
+        width: 160px;
+        height: 40px;
+        margin-left: 600px;
+        margin-top: 40px;
+        background-color: #050505;
+        color: white;
+        font-size: 24px;
+        transform-style: preserve-3d;
+    }
+    
+    #boton:hover {
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 15px black;
+        transform: rotate(360deg);
+    }
+    
+    footer {
+        height: 350px;
+        background-image: url(../img/fondo-footer.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 1800px;
+        animation: move 10s linear infinite alternate;
+    }
+    
+    @keyframes move {
+        from {
+            background-position: bottom left;
+        }
+        to {
+            background-position: top right;
+        }
+    }
+    
+    footer h2 {
+        margin-top: 50px;
+    }
+    
+    footer p {
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    #img1 {
+        width: 300px;
+        height: 100px;
+        margin-left: 540px;
+        margin-top: 80px;
+    }
+    
+    #img1 img {
+        height: 60px;
+        padding: 15px;
+    }
+    
+    #img1 img:hover {
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 15px black;
+        transform: rotate(360deg);
+    }
+    
+    .icon-arrow-up {
+        background: black;
+        margin-left: 1200px;
+        color: white;
+        font-size: 30px;
+        margin-top: -40px;
+    }
+    
+    @media all and (min-width: 600px) and (max-width: 1023px) {
+        .menu {
+            text-align: center;
+            height: 200px;
+        }
+        .texto-principal {
+            text-align: justify;
+        }
+        .cv {
+            font-size: 20px;
+            padding: 30px;
+        }
+        .diseno {
+            margin-left: 70px;
+        }
+        .reparacion {
+            margin-left: 490px;
+        }
+        .presentacion {
+            margin-left: 200px;
+        }
+        #robot {
+            height: 200px;
+        }
+        .info1 {
+            margin-left: 500px;
+        }
+        .imagenes {
+            float: left;
+            margin-top: 120px;
+        }
+        #img1 {
+            margin-left: 340px;
+        }
+        .icon-arrow-up {
+            margin-bottom: 40px;
+            float: left;
+        }
+    }
+    
+    @media all and (max-width: 599px) {
+        .padre {
+            display: inline-block;
+            flex-flow: column;
+        }
+        header {
+            background-image: url(../img/muelle.jpg);
+            background-position: center;
+            background-attachment: contain;
+            background-size: cover;
+            display: block;
+            flex-flow: column;
+        }
+        .menu {
+            background-color: rgba(0, 0, 0, 0.3);
+            display: block;
+            flex-wrap: nowrap;
+            height: 200px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .logo {
+            flex: none;
+            font-size: 26px;
+        }
+        .nav {
+            flex: none;
+            display: block;
+        }
+        .nav a {
+            color: white;
+            display: inline-block;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 0 5px;
+            letter-spacing: 1px;
+            margin-left: 5px;
+        }
+        .texto-principal {
+            /*background: rgba(0,0,0,0.3);*/
+            height: 580px;
+            width: 700px;
+            display: inline-block;
+            align-items: flex-start;
+        }
+        h1 {
+            font-size: 23px;
+            color: white;
+            text-align: center;
+            font-weight: 300px;
+            line-height: 1.6;
+            margin-left: 20px;
+            margin-bottom: 50px;
+        }
+        .cv {
+            font-size: 24px;
+            color: white;
+            margin-left: 160px;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        h2 {
+            font-size: 26px;
+            color: white;
+            text-align: center;
+            margin-top: 35px;
+        }
+        .parrafo {
+            font-size: 21px;
+            color: white;
+            margin-top: 20px;
+            text-align: justify;
+        }
+        .diseno {
+            border: 1px solid #595d63;
+            background: #595d63;
+            width: 400px;
+            height: 200px;
+            margin-left: 180px;
+        }
+        .diseno h3 {
+            font-size: 20px;
+            color: white;
+            text-align: center
+        }
+        .diseno p {
+            font-size: 18px;
+            color: white;
+            text-align: justify;
+            margin: 20px;
+        }
+        .diseno:hover {
+            background: #d92809;
+        }
+        #github {
+            height: 40px;
+            margin: 10px;
+        }
+        .reparacion {
+            border: 1px solid #595d63;
+            background: #595d63;
+            width: 400px;
+            height: 200px;
+            margin-left: 740px;
+            margin-top: -197px;
+        }
+        .reparacion:hover {
+            background: #d92809;
+        }
+        #repar {
+            height: 40px;
+            margin: 10px;
+        }
+        .reparacion h3 {
+            font-size: 20px;
+            color: white;
+            text-align: center
+        }
+        .reparacion p {
+            font-size: 18px;
+            color: white;
+            text-align: justify;
+            margin: 20px;
+        }
+        .presentacion {
+            font-size: 24px;
+            color: white;
+            width: 600px;
+            height: 200px;
+            text-align: justify;
+            margin-left: 330px;
+        }
+        .presentacion p {
+            margin-top: 20px;
+        }
+        #robot {
+            height: 340px;
+            margin-top: 140px;
+            margin-left: 40px;
+        }
+        .info1 {
+            float: right;
+            margin-top: -260px;
+            margin-right: 100px;
+        }
+        #info {
+            color: white;
+            font-size: 26px;
+        }
+        .info1 p {
+            color: white;
+            font-size: 18px;
+            padding: 6px;
+        }
+        .info1 ul {
+            margin-top: 10px;
+            color: white;
+        }
+        .info1 ul li {
+            list-style: none;
+            padding: 10px;
+        }
+        .info1 img {
+            height: 60px;
+        }
+        .info1 img:hover {
+            transform: scale(1.4);
+        }
+        #habilidades {
+            margin: 200px;
+        }
+        .algo {
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+            width: 690px;
+            margin-top: -75px;
+        }
+        .imagenes {
+            float: right;
+        }
+        .imagenes img {
+            height: 120px;
+            margin-top: -110px;
+            padding: 5px;
+        }
+        footer {
+            height: 350px;
+            background: #595d63;
+        }
+        footer h2 {
+            margin-top: 50px;
+        }
+        footer p {
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #img1 {
+            width: 300px;
+            height: 100px;
+            margin-left: 540px;
+            margin-top: 80px;
+        }
+        #img1 img {
+            height: 60px;
+            padding: 15px;
+        }
+        #img1 img:hover {
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px 15px black;
+            transform: rotate(360deg);
+        }
+        .icon-arrow-up {
+            background: black;
+            margin-left: 1200px;
+            color: white;
+            font-size: 30px;
+            margin-top: -40px;
+        }
+    }

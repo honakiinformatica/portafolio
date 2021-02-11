@@ -1,0 +1,61 @@
+.contacto {
+    width: 80%;
+    height: 640px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+}
+
+.contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+form {
+    width: 700px;
+    padding: 16px;
+    border-radius: 20px;
+    margin-left: 320px;
+    margin-top: 30px;
+}
+
+form ul {
+    width: 80px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form li {
+    display: inline;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="Telefono"] {
+    width: 250px;
+    padding: 3px 10px;
+    border: 2px solid #5c5e73;
+    border-radius: 3px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+textarea {
+    width: 400px;
+    padding: 3px;
+    border: 2px solid #5c5e73;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+#boton {
+    margin-left: -1px;
+}
+
+#boton:hover {
+    background: #0916ba;
+}
